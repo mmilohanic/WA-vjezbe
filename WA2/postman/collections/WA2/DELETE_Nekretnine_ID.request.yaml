@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/nekretnine/2"
+method: DELETE
+order: 7000

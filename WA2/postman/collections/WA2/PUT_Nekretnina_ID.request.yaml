@@ -1,0 +1,16 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/nekretnine/2"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "naziv": "Kuća Kastav",
+        "opis": "Kuća s vrtom i garažom.",
+        "cijena": 350000,
+        "lokacija": "Kastav",
+        "broj_soba": 5,
+        "povrsina": 165
+    }
+order: 5000

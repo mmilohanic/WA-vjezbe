@@ -1,0 +1,15 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/ponude"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "id_nekretnine": 1,
+        "ime_kupca": "Ivan",
+        "prezime_kupca": "Horvat",
+        "ponudjena_cijena": 235000,
+        "broj_telefona_kupca": "091 234 5678"
+    }
+order: 9000

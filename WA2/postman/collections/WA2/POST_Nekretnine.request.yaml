@@ -1,0 +1,16 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/nekretnine"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "naziv": "Apartman Opatija",
+        "opis": "Apartman blizu plaže.",
+        "cijena": 198000,
+        "lokacija": "Opatija",
+        "broj_soba": 2,
+        "povrsina": 54
+    }
+order: 4000

@@ -1,0 +1,12 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/nekretnine/1"
+method: PATCH
+body:
+  type: json
+  content: |-
+    {
+        "cijena": 290000,
+        "broj_soba": 4
+    }
+order: 6000
