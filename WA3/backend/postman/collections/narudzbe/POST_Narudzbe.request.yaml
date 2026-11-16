@@ -1,0 +1,27 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/narudzbe"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "narucene_pizze": [
+            {
+                "naziv": "Margherita",
+                "velicina": "srednja",
+                "kolicina": 2
+            },
+            {
+                "naziv": "Fantasia",
+                "velicina": "jumbo",
+                "kolicina": 1
+            }
+        ],
+        "podaci_dostava": {
+            "prezime": "Perić",
+            "adresa": "Zagrebačka 15, Pula",
+            "telefon": "091234567"
+        }
+    }
+order: 3000

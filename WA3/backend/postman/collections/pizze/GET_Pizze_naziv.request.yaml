@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: "{{ADDRESS}}/pizze/Margherita"
+method: GET
+order: 2000
