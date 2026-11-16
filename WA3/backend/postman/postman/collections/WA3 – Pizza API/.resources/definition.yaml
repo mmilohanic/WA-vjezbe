@@ -1,0 +1,4 @@
+$kind: collection
+description: ""
+variables:
+  ADDRESS: http://localhost:3000

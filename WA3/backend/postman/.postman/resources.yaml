@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 0b1132a5-b9e2-4b3b-8376-4f30b7919e8b
+
+cloudResources:
+  collections:
+    ../postman/collections/WA3 – Pizza API: 9e82bf44-9356-4d98-bc45-dda16ca34040
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

@@ -1,0 +1,58 @@
+{
+    "info": {
+        "name": "WA3 – Pizza API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "pizze",
+            "item": [
+                {
+                    "name": "GET_Pizze_Home",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{ADDRESS}}/"
+                    }
+                },
+                {
+                    "name": "GET_Pizze_ALL",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{ADDRESS}}/pizze"
+                    }
+                },
+                {
+                    "name": "GET_Pizze_naziv",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{ADDRESS}}/pizze/Margherita"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "narudzbe",
+            "item": [
+                {
+                    "name": "POST_Narudzbe",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"narucene_pizze\": [\n        {\n            \"naziv\": \"Margherita\",\n            \"velicina\": \"srednja\",\n            \"kolicina\": 2\n        },\n        {\n            \"naziv\": \"Fantasia\",\n            \"velicina\": \"jumbo\",\n            \"kolicina\": 1\n        }\n    ],\n    \"podaci_dostava\": {\n        \"prezime\": \"Perić\",\n        \"adresa\": \"Zagrebačka 15, Pula\",\n        \"telefon\": \"091234567\"\n    }\n}",
+                            "options": { "raw": { "language": "json" } }
+                        },
+                        "url": "{{ADDRESS}}/narudzbe"
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [{ "key": "ADDRESS", "value": "http://localhost:3000" }]
+}
